@@ -1,28 +1,18 @@
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>Nuno V. da Silva</title>
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there!</h1>
-				<p>This is a test<em>Nothing new in here!</em> part two <a href="/about">part III</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:alpha@alpha.com">email</a></li>
-        		<li><a href="https://github.com/nunodasilva">github.com/hankquinlan</a></li>
-			</ul>
-		</footer>
-	</body>
+
+<script type="text/javascript">
+
+function detectBrowser()
+{
+    var slashIndex = window.location.href.lastIndexOf("/");
+    var cropped = window.location.href.slice(0,slashIndex+1);
+
+    window.location.replace(cropped + "assets/player/KeynoteDHTMLPlayer.html");
+}
+
+</script>
+
+<body bgcolor="black" onload="detectBrowser()">
+</body>
+
 </html>
